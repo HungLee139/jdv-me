@@ -57,7 +57,7 @@
 
   /* nhiệt độ trong nhà: 36 → 24 */
   var tin = document.getElementById('tIn'), bar = document.getElementById('tBar');
-  setTimeout(function () { count(tin, 36, 24, 2400, '°C'); if (bar) bar.style.width = '100%'; }, 700);
+  if (tin) setTimeout(function () { count(tin, 36, 24, 2400, '°C'); if (bar) bar.style.width = '100%'; }, 700);
 
   /* 4 hệ thống: làm nổi lớp theo đoạn đang đọc */
   var sysB = document.querySelector('#he-thong .bld');
